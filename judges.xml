@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+	<name>com_judges</name>
+	<author>SPIDERWEB</author>
+	<creationDate>July 2018</creationDate>
+	<copyright>(C) 2009 - 20418 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see	LICENSE.txt</license>
+	<authorEmail>contact@spiderwebindia.com</authorEmail>
+	<version>2.0.0</version>
+	<description>COM_JUDGES_XML_DESCRIPTION</description>
+	<install> <!-- Runs on install -->
+		<sql folder="admin">
+			<file driver="mysql" charset="utf8">sql/install.sql</file>
+		</sql>
+	</install>
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates</schemapath>
+		</schemas>
+	</update>
+	<uninstall> <!-- Runs on uninstall -->
+		<sql folder="admin">
+			<file driver="mysql" charset="utf8">sql/uninstall.sql</file>
+		</sql>
+	</uninstall>
+	
+	<scriptfile>install.php</scriptfile>
+	
+	<files folder="site">
+		<filename>controller.php</filename>
+		<filename>judges.php</filename>
+		<filename>thumbnail.inc.php</filename>
+		<filename>router.php</filename>
+		<filename>index.html</filename>
+		<folder>helpers</folder>
+		<folder>views</folder>
+		<folder>models</folder>
+		<folder>controllers</folder>
+		<folder>assets</folder>
+	</files>
+	<files folder="images">
+		<folder>judges</folder>
+	</files>
+	<languages folder="site/language">
+		<language tag="en-GB">en-GB.com_judges.ini</language>
+	</languages>
+	
+	<administration>
+		<menu img="class:judges">COM_JUDGES</menu>
+		
+		<languages folder="admin/language">
+			<language tag="en-GB">en-GB.com_judges.ini</language>
+			<language tag="en-GB">en-GB.com_judges.sys.ini</language>
+		</languages>
+
+		<files folder="admin">
+			<filename>controller.php</filename>
+			<filename>judges.php</filename>
+			<filename>config.xml</filename>
+			<filename>thumbnail.inc.php</filename>
+			<filename>install.php</filename>
+			<filename>index.html</filename>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+	</administration>
+</extension>	

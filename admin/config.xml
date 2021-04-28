@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset name="judges"
+		description="JCONFIG_JUDGES_DESC"
+		label="JCONFIG_JUDEGS_LABEL"
+	>
+		<field
+			name="judgegroup"
+			type="usergroup"
+			label="JOPTION_FILTER_SELECT_USER_ACCESS"
+			description="JOPTION_FILTER_SELECT_USER_ACCESS_DESC"
+			class="multipleAccessLevels"
+			
+		/>
+		<field
+			name="admingroup"
+			type="usergroup"
+			label="JOPTION_FILTER_SELECT_GROUP_ACCESS"
+			description="JOPTION_FILTER_SELECT_GROUP_ACCESS_DESC"
+			class="multipleAccessLevels"
+			
+		/>
+
+		<field
+			name="map_key"
+			type="text"
+			label="COM_JUDGES_GOOGLE_MAP_KEY"
+			description="COM_JUDGES_GOOGLE_MAP_KEY_DESC"
+		/>
+	
+	</fieldset>
+	<fieldset name="permissions"
+		description="JCONFIG_PERMISSIONS_DESC"
+		label="JCONFIG_PERMISSIONS_LABEL"
+	>
+		<field 
+            name="rules" 
+            type="rules"
+			component="com_judges"
+            class="inputbox"
+			filter="rules"
+			validate="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			section="component" />
+			
+	</fieldset>
+</config>

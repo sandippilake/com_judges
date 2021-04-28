@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="filter">
+        <field name="search" 
+            type="text" 
+            label="COM_JUDGES_SEARCH" 
+            description="COM_JUDGES_SEARCH_DESC"
+            hint="JSEARCH_FILTER"            
+        />
+
+        <field name="level" 
+            type="judgelevel" 
+            label="COM_JUDGES_SELECT_JUDGE_LEVEL" 
+            description="COM_JUDGES_SELECT_JUDGE_LEVEL_DESC"
+            onchange="this.form.submit();"
+        />
+
+        <!-- <field name="status" 
+            table="#__jdg_judge_status" 
+            key_field="judge_status_id" 
+            value_field="judge_status"
+            type="foreignkey" 
+            label="COM_JUDGES_SELECT_JUDGE_STATUS" 
+            description="COM_JUDGES_SELECT_JUDGE_STATUS_DESC"
+            onchange="this.form.submit();"
+        /> -->
+
+        <field name="region" 
+            table="#__toes_competitive_region" 
+            key_field="competitive_region_abbreviation" 
+            value_field="competitive_region_name" 
+            type="foreignkey" 
+            label="COM_JUDGES_SELECT_TICA_REGION" 
+            description="COM_JUDGES_SELECT_TICA_REGION_DESC"
+            onchange="this.form.submit();"
+        />
+
+        <field name="ring_instructor" 
+            type="list" 
+            label="COM_JUDGES_RING_INSTRUCTOR" 
+            description="COM_JUDGES_RING_INSTRUCTOR_DESC"
+            onchange="this.form.submit();"
+            default=""
+        >
+            <option value="">COM_JUDGES_SELECT_RING_INSTRUCTOR</option> 
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+
+        <field name="school_instructor" 
+            type="list" 
+            label="COM_JUDGES_SCHOOL_INSTRUCTOR" 
+            description="COM_JUDGES_SCHOOL_INSTRUCTOR_DESC"
+            onchange="this.form.submit();"
+            default=""
+        >
+            <option value="">COM_JUDGES_SELECT_SCHOOL_INSTRUCTOR</option> 
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+
+        <field name="country" 
+            type="country" 
+            label="COM_JUDGES_SELECT_COUNTRY" 
+            description="COM_JUDGES_SELECT_COUNTRY_DESC"
+            onchange="this.form.submit();"
+        />
+
+        <field name="state" 
+            type="addressstate" 
+            label="COM_JUDGES_SELECT_STATE" 
+            description="COM_JUDGES_SELECT_STATE_DESC"
+            onchange="this.form.submit();"
+        />
+
+        <!-- <field name="city" 
+            type="city" 
+            label="COM_JUDGES_SELECT_CITY" 
+            description="COM_JUDGES_SELECT_CITY_DESC"
+            onchange="this.form.submit();"
+        /> -->
+    </fields>
+
+    <fields name="list">
+		<field
+			name="fullordering"
+			type="list"
+			label="COM_CONTENT_LIST_FULL_ORDERING"
+			description="COM_CONTENT_LIST_FULL_ORDERING_DESC"
+			onchange="this.form.submit();"
+			default="c.lastname ASC"
+			>
+			<option value="">COM_JUDGES_SORT_BY</option>
+			<option value="c.firstname ASC">COM_JUDGES_FIRSTNAME_ASC</option>
+			<option value="c.firstname DESC">COM_JUDGES_FIRSTNAME_DESC</option>
+			<option value="c.lastname ASC">COM_JUDGES_LASTNAME_ASC</option>
+			<option value="c.lastname DESC">COM_JUDGES_LASTNAME_DESC</option>
+			<option value="r.competitive_region_name ASC">COM_JUDGES_REGION_ASC</option>
+			<option value="r.competitive_region_name DESC">COM_JUDGES_REGION_DESC</option>
+			<option value="l.judge_level ASC">COM_JUDGES_LEVEL_ASC</option>
+			<option value="l.judge_level DESC">COM_JUDGES_LEVEL_DESC</option>
+			<option value="c.cb_country ASC">COM_JUDGES_COUNTRY_ASC</option>
+			<option value="c.cb_country DESC">COM_JUDGES_COUNTRY_DESC</option>
+		</field>
+	</fields>
+</form>

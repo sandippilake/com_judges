@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="judge_details">
+		<field name="user_id" type="username" class="inputbox" 
+			description="COM_JUDGES_USERS"
+			label="COM_JUDGES_SELECT_USERS"
+			/>
+		<field name="firstname" type="text"
+			class="inputbox"
+			description="COM_JUDGES_FIRST_NAME_DESC"
+			label="COM_JUDGES_FIRST_NAME_LABEL"
+			required="true"
+			size="30"
+		/>
+
+		<field name="middlename" type="text"
+			class="inputbox"
+			description="COM_JUDGES_FIRST_NAME_DESC"
+			label="COM_JUDGES_MIDDLE_NAME_LABEL"
+			size="30"
+		/>
+
+		<field name="lastname" type="text"
+			class="inputbox"
+			description="COM_JUDGES_LAST_NAME_DESC"
+			label="COM_JUDGES_LAST_NAME_LABEL"
+			required="true"
+			size="30"
+		/>
+
+		<field name="fullname" type="text"
+			class="inputbox"
+			description="COM_JUDGES_FULL_NAME_DESC"
+			label="COM_JUDGES_FULL_NAME_LABEL"
+			size="30"
+		/>
+
+		<field name="email" type="text"
+			class="inputbox"
+			description="COM_JUDGES_EMAIL_DESC"
+			label="COM_JUDGES_EMAIL_LABEL"
+			required="true"
+			size="30"
+			validate="email"
+		/>
+
+		<field name="phone" type="text"
+			class="inputbox"
+			description="COM_JUDGES_PHONE_DESC"
+			label="COM_JUDGES_PHONE_LABEL"
+			size="30"
+		/>
+		
+		<!-- <field name="ticaregion" type="ticaregion"
+			class="inputbox"
+			description="COM_JUDGES_TICA_REGION_DESC"
+			label="COM_JUDGES_REGION_LABEL"
+			size="30"
+		/> -->
+
+        <field name="ticaregion" 
+            table="#__toes_competitive_region" 
+            key_field="competitive_region_abbreviation" 
+            value_field="competitive_region_name" 
+            type="foreignkey" 
+            label="COM_JUDGES_SELECT_TICA_REGION" 
+            description="COM_JUDGES_SELECT_TICA_REGION_DESC"
+        />
+
+		<field name="judge_abbreviation" type="text"
+			class="inputbox"
+			description="COM_JUDGES_JUDGE_ABBREVIATION_DESC"
+			label="COM_JUDGES_JUDGE_ABBREVIATION_LABEL"
+			required="true"
+			size="30"
+		/>
+
+		<field name="photo" type="file" 
+			label="COM_JUDGES_JUDGE_PHOTO" 
+			description="COM_JUDGES_JUDGE_PHOTO" 
+			size="10" accept="image/*" />
+		
+		<!-- <field name="status" type="judgestatus"
+			class="inputbox"
+			description="COM_JUDGES_STATUS_DESC"
+			label="COM_JUDGES_JUDGE_STATUS_LABEL"
+			required="true"
+			size="30"
+		/> -->
+		
+		<field name="judgestatus" 
+            table="#__jdg_judge_status" 
+            key_field="judge_status_id" 
+            value_field="judge_status"
+            type="foreignkey" 
+            label="COM_JUDGES_JUDGE_STATUS_LABEL" 
+            description="COM_JUDGES_STATUS_DESC"
+        />
+
+		<!-- <field name="judge_level" type="judgelevel"
+			class="inputbox"
+			description="COM_JUDGES_JUDGE_LEVEL_DESC"
+			label="COM_JUDGES_JUDGE_LEVEL_LABEL"
+			size="30"
+		/> -->
+
+		<field name="judgelevel" 
+            table="#__jdg_judge_level" 
+            key_field="judge_level_id" 
+            value_field="judge_level" 
+            type="foreignkey" 
+            label="COM_JUDGES_JUDGE_LEVEL_LABEL" 
+            description="COM_JUDGES_JUDGE_LEVEL_DESC"
+        />		
+		
+		<field name="licensed" type="text"
+			class="inputbox"
+			description="COM_JUDGES_LICENSED_DESC"
+			label="COM_JUDGES_LICENSED_LABEL"
+			required="true"
+			size="30"
+		/>
+		
+		<field name="licensed_until" type="calendar"
+			class="inputbox"
+			description="COM_JUDGES_LICENSED_UNTIL_DESC"
+			label="COM_JUDGES_LICENSED_UNTIL_LABEL"
+			size="30"
+		/>
+		
+		<field name="airport" type="text"
+			class="inputbox"
+			description="COM_JUDGES_AIRPORT_DESC"
+			label="COM_JUDGES_AIRPORT_LABEL"
+			size="30"
+		/>
+			
+		<field name="judge_of_merit" 
+			type="checkbox" 
+			label="COM_JUDGES_MERIT_DESC" 
+			description="COM_JUDGES_MERIT_LABEL" 
+			value="1" default="0" />
+
+		<field name="judge_emeritus" 
+			type="checkbox" 
+			label="COM_JUDGES_EMERITUS_DESC" 
+			description="COM_JUDGES_EMERITUS_LABEL" 
+			value="1" default="0" />
+
+		<field name="distinguished_judge" 
+			type="checkbox" 
+			label="COM_JUDGES_DISTINGUISHED_LABEL" 
+			description="COM_JUDGES_DISTINGUISHED_LABEL" 
+			value="1" default="0" />
+			
+		<field name="ring_instructor" 
+			type="checkbox" 
+			label="COM_JUDGES_RING_INSTRUCTOR" 
+			description="COM_JUDGES_RING_LABEL" 
+			value="1" default="0" />
+
+		<field name="school_instructor" 
+			type="checkbox" 
+			label="COM_JUDGES_SCHOOL_INSTRUCTOR" 
+			description="COM_JUDGES_INSTRUCTOR_LABEL" 
+			value="1" default="0" />
+				
+		<field name="genetics_instructor" 
+			type="checkbox" 
+			label="COM_JUDGES_GENETICS_LABEL" 
+			description="COM_JUDGES_GENETICS_DESC" 
+			value="1" default="0" />
+
+		<field name="international"
+			type="checkbox"
+			label="COM_JUDGES_INTERNATIONAL_LABEL"
+			description="COM_JUDGES_INTERNATIONAL_DESC"
+			value="1" default="0" />
+
+		<field name="other" type="text"
+			class="inputbox"
+			description="COM_JUDGES_OTHER_DATA_DESC"
+			label="COM_JUDGES_OTHER_DATA_LABEL"
+			size="30"
+		/>
+		
+		<field name="id" type="hidden" class="inputbox"
+			description="COM_JUDGES_JUDGE_ID_DESC"
+			label="COM_JUDGES_JUDGE_ID_LABEL"
+		/>
+	</fieldset>
+</form>

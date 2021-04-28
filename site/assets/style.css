@@ -1,0 +1,347 @@
+.judge-detail {
+    float: left;
+    margin: 5px 0;
+    width: 49%;
+}
+
+.judge-image {
+    float: left;
+    margin: 5px 15px;
+}
+
+.judge-info {
+    float: left;
+	width: 55%;
+}
+
+.nav.nav-tabs {
+    border: medium none;
+}
+.nav.nav-tabs {
+    margin-bottom: 0;
+}
+
+.tab-content {
+    border: 1px solid #DDDDDD;
+    overflow:auto !important;
+}
+
+.tab-content .tab-pane {
+    /*background-color: #F1EAE4;
+    border-bottom: 2px solid #883C3E;
+    border-top: 2px solid #883C3E;*/
+    clear: right;
+    margin: 15px;
+    text-align: left;
+    float:left;
+    width: 96%;	
+}
+
+.judges_searchtool input[type="text"]{
+	font-size:14px !important;
+	/*margin-top:14px;*/
+	margin-top:0;
+	margin-left:5px;
+}
+
+input,input[type="text"]{
+	font-size:14px !important;
+}
+
+.btn, button{
+	font-size:14px !important;
+
+}
+
+.judges_searchtool button.btn.hasTooltip{
+	padding-left:15px !important;
+	padding-right:15px !important;
+}
+
+#list_fullordering{
+	/*margin-top:14px;*/
+	margin-right:5px;
+}
+
+span.caret{
+	
+	display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: top;
+    border-top: 4px solid #fff;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    content: "";
+}
+
+/*reponsive*/
+/* Only Phones (Portrait) */
+@media (max-width: 320px) {
+.wrapper{    
+	max-width: 100% !important;
+    margin: 0 auto !important;
+   }
+.judge-detail {
+    width: 86% !important;
+    margin: 15px 15px;
+}
+.judge-info{
+    width: 100%;
+}    
+#top-a {
+    width: 50%;
+}
+select#dj-main96select {
+    margin-top: 0;
+}
+.dj-select {
+    font-size: 12px !important;
+    max-width: 80% !important;
+}
+.searchbox input{
+    font-size: 12px;
+    width: 100px !important;
+}  
+#search {
+    float: right;
+    width: 50% !important;
+}  
+.searchbox{float:left;}
+#maininner {
+    width: 100% !important;
+}
+#main #sidebar-a {
+	width: 97% !important;
+}
+.sidebar_inner,.need_help_back{width: 100% !important;}
+body#page {
+        overflow: hidden;
+}
+ul#myTabTabs {
+    padding-left: 10px;
+}
+#myTabTabs li>a{
+	padding-left:8px;
+	padding-right:8px;
+	font-size:12px;
+}
+.footer_left,.footer_cneter,.footer_right,#user1,#user2,#user3{width:100% !important;}
+.bottom{height:auto !important;}
+.bottom #user2 .menu{left:0 !important;}
+#user3 input[type="image"]{padding:10px;}
+.footer_right{text-align:left !important;}
+}
+
+/* Only Phones (Portrait) */
+@media (max-width: 479px) { 
+.judge-detail {
+    width: 86%;
+    margin: 15px 15px;
+}
+.judge-info{width:100%;margin: 5px 15px;}
+.wrapper{    
+	max-width: 100% !important;
+    margin: 0 auto !important;
+   }
+#top-a {
+    width: 50%;
+}
+select#dj-main96select {
+    margin-top: 0;
+}
+.dj-select {
+    font-size: 12px !important;
+    max-width: 80% !important;
+}
+.searchbox input{
+    font-size: 12px;
+    width: 100px !important;
+}
+#search {
+    float: right;
+    width: 50% !important;
+} 
+.searchbox{float:left;}
+#maininner {
+    width: 100% !important;
+}
+#main #sidebar-a {
+	width: 97% !important;
+}
+.sidebar_inner,.need_help_back{width: 100% !important;}
+body#page {
+       overflow: hidden;
+}
+ul#myTabTabs {
+    padding-left: 10px;
+}
+#myTabTabs li>a{
+	padding-left:8px;
+	padding-right:8px;
+	font-size:12px;
+}
+.footer_left,.footer_cneter,.footer_right,#user1,#user2,#user3{width:100% !important;}
+.bottom{height:auto !important;}
+.bottom #user2 .menu{left:0 !important;}
+#user3 input[type="image"]{padding:10px;}
+.footer_right{text-align:left !important;}
+}
+
+/* Phone landscape */
+@media (max-width: 480px)  {
+.judge-detail {
+    width: 89%;
+    margin: 15px 15px;
+}
+.judge-info {
+    margin: 5px 15px;
+    width:100% !important;
+}
+.wrapper{    
+	max-width: 100% !important;
+    margin: 0 auto !important;
+   }
+#top-a {
+    width: 50% !important;
+}
+select#dj-main96select {
+    margin-top: 0;
+}
+.dj-select {
+    font-size: 12px !important;
+    max-width: 80% !important;
+}
+.searchbox input{
+    font-size: 12px;
+    width: 78px !important;
+}
+#search {
+    float: right;
+    width: 45% !important;
+} 
+.searchbox{float:left;}
+.wrapper #maininner {
+    width: 100% !important;
+    left:0 !important;
+}
+#main #sidebar-a {
+	width: 97% !important;
+}
+.sidebar_inner,.need_help_back{width: 100% !important;}
+body#page {
+        overflow: hidden;
+}
+ul#myTabTabs {
+    padding-left: 10px;
+}
+.footer_left,.footer_cneter,.footer_right,#user1,#user2,#user3{width:100% !important;}
+.bottom{height:auto !important;}
+.bottom #user2 .menu{left:0 !important;}
+#user3 input[type="image"]{padding:10px;}
+.footer_right{text-align:left !important;}
+.judge-image {
+    /*width: 84%;*/
+	width: 70%;
+ }   
+ .tab-content .tab-pane{margin:10px;}
+ .judges_searchtool .js-stools-container-filters{display:none;}
+}
+
+/* Only Tablets (Portrait) and Phones (Landscape) */
+@media (min-width: 481px) and (max-width: 767px) {
+.judge-detail {
+    width: 44.5%;
+    margin: 15px 10px;
+}
+.judge-info {
+    margin: 5px 15px;
+}
+.wrapper{    
+	max-width: 100% !important;
+    margin: 0 auto !important;
+   }
+#top-a {
+    width: 50% !important;
+}
+select#dj-main96select {
+    margin-top: 0;
+}
+.dj-select {
+    font-size: 12px !important;
+    max-width: 80% !important;
+}
+.searchbox input{
+    font-size: 12px;
+    width: 100px !important;
+}
+#search {
+    float: right;
+    width: 50% !important;
+} 
+.searchbox{float:left;}
+.wrapper #maininner {
+    width: 100% !important;
+     left:0 !important;
+}
+#main #sidebar-a {
+	width: 97% !important;
+}
+.sidebar_inner,.need_help_back{width: 100% !important;}
+body#page {
+       overflow: hidden;
+}
+ul#myTabTabs {
+    padding-left: 10px;
+}
+.footer_left,.footer_cneter,.footer_right,#user1,#user2,#user3{width:100% !important;}
+.bottom{height:auto !important;}
+.bottom #user2 .menu{left:0 !important;}
+#user3 input[type="image"]{padding:10px;}
+.footer_right{text-align:left !important;}
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+.dj-main li.first .dj-up_a{
+	width: 135px !important;
+}
+.dj-main li a.dj-up_a{
+	font-size:12px !important;
+	width:205px !important;
+}
+#main #maininner {
+    width: 69% !important;
+}
+#main #sidebar-a{   /* width: 20% !important;*/ left:-69%;}
+.judge-info{    margin: 5px 15px !important;}
+.footer_left,.footer_cneter,.footer_right,#user1,#user2,#user3{width:30% !important;}
+.bottom{height:auto !important;}
+.bottom #user2 .menu{left:0 !important;}
+#user3 input[type="image"]{padding:10px;}
+.footer_right{text-align:left !important;}
+}
+
+@media (max-width: 767px)
+{
+	#dj-main96.allowHide {
+		display: none !important;
+	}
+	#dj-main96select {
+    display: inline-block !important;
+	}
+	.judges_searchtool .hidden-phone
+	{
+		display:block;
+	}
+}
+
+#judge-form input[type=file] {
+    width: 41% !important;
+}
+#judge-form span.select2.select2-container {
+    width: 41% !important;
+}
+
+.judges_searchtool #list_fullordering {
+    width: 250px !important;
+    margin-top: 0 !important;
+}
